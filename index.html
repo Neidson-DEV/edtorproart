@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>EditorPorArt</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.svg" alt="Logo Editor Pro Art">
+                </a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Modelos</a></li>
+                    <li><a href="#">Poste</a></li>
+                    <li><a href="#">Dicas</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="top-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-top-site">
+                        <img src="images/foto.png" alt="foto">
+                        <img src="images/foto.png" alt="foto">
+                        <img src="images/foto.png" alt="foto">
+                    </div><!--img-top-site-->
+                    
+                    <div class="txt-topo">
+                        <h1>Transforme sua presença online com pequenos detalhes<span>.</span></h1>
+                        <p><span>Um pequeno detalhe faz toda a diferença.</span> Utilize detalhes minuciosos para conquistar novos seguidores de forma fácil e rápida. Oferecemos os melhores preços do mercado com vídeos e posts interativos para Instagram e outras redes sociais. Eleve sua estratégia digital e engaje seu público como nunca antes!</p>
+                        <div class="btn-contato">
+                            <a href="#">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!--txt-topo-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--top-do-site-->
+
+        <section class="modelos">
+            <div class="interface">
+                <h2>FAÇA <span>DIFERENTE</span> NÃO SEJA IGUAL A TODOS.</h2>
+
+                <div class="flex">
+                    <div class="modelos-box">
+                        <h3>Título do Vídeo 1</h3>
+                        <p>Subtítulo do Vídeo 1</p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                    </div><!--modelos-box-->
+        
+                    
+                    <div class="modelos-box">
+                        <h3>Título do Vídeo 2</h3>
+                        <p>Subtítulo do Vídeo 2</p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                    
+                    </div><!--modelos-box-->
+                </div><!--flex-->
+                <div class="flex">
+                    <div class="modelos-box">
+                        <h3>Título do Vídeo 1</h3>
+                        <p>Subtítulo do Vídeo 1</p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                    </div><!--modelos-box-->
+        
+                    
+                    <div class="modelos-box">
+                        <h3>Título do Vídeo 2</h3>
+                        <p>Subtítulo do Vídeo 2</p>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                    
+                    </div><!--modelos-box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--modelos-->
+
+        <section class="modelos">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail" required>
+                    <input type="text" name="" id="" placeholder="Seu celular">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="btn-social">
+                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="#"><button><i class="bi bi-youtube"></i></button></a>
+                        <a href="#"><button><i class="bi bi-telegram"></i></button></a>
+                    </div>
+                    <div class="logo-footer">
+                        <img src="images/logo.svg" alt="logo">
+                    </div>
+                </div>
+            </div><!--line-footer-->
+            <div class="line-footer">
+                <p><i class="bi bi-envelope"></i><a href="mailto:Contato">Contato</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    <div class="whatsapp-button">
+        <a href="https://wa.me/SEU_NUMERO_DE_TELEFONE">
+            <img src="images/zap.png" alt="Botão do WhatsApp">
+        </a>
+    </div>
+
+    <script>
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down
+                header.style.height = '0';
+                header.style.display = 'none';
+            } else {
+                // Scrolling up or at the top
+                header.style.height = 'auto';
+                header.style.display = 'block';
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
